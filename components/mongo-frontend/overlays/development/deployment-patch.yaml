@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: mongo-frontend
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/mongo-db-example@sha256:fc82118348b92cf4cace169ef8273f259e8a2a8b74e716f4b948fea465cb9ea0
+        name: container-image
+        resources: {}
+status: {}
